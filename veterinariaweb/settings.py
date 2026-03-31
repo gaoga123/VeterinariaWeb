@@ -80,6 +80,8 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+
 ROOT_URLCONF = 'veterinariaweb.urls'
 
 TEMPLATES = [
